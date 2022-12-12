@@ -1,6 +1,5 @@
 package com.example.hw6;
 
-import android.media.Image;
 
 public class Games {
     private String gameName;
