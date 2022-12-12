@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainPageFragment">
 
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.hw6.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_fightGameFragment"
+            app:destination="@id/fightGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_adventureGameFragment"
+            app:destination="@id/adventureGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_familyGameFragment"
+            app:destination="@id/familyGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_classicGameFragment"
+            app:destination="@id/classicGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_sportGameFragment"
+            app:destination="@id/sportGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_shooterGameFragment"
+            app:destination="@id/shooterGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_independentGameFragment"
+            app:destination="@id/independentGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_platformGameFragment"
+            app:destination="@id/platformGameFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_gameTwoFragment"
+            app:destination="@id/gameTwoFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_gameOneFragment"
+            app:destination="@id/gameOneFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_gameThreeFragment"
+            app:destination="@id/gameThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classicGameFragment"
+        android:name="com.example.hw6.categoryfragments.ClassicGameFragment"
+        android:label="fragment_classic_game"
+        tools:layout="@layout/fragment_classic_game" />
+    <fragment
+        android:id="@+id/adventureGameFragment"
+        android:name="com.example.hw6.categoryfragments.AdventureGameFragment"
+        android:label="fragment_adventure_game"
+        tools:layout="@layout/fragment_adventure_game" >
+        <action
+            android:id="@+id/action_adventureGame_to_warband"
+            app:destination="@id/gameOneFragment"
+            app:popUpTo="@id/adventureGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/familyGameFragment"
+        android:name="com.example.hw6.categoryfragments.FamilyGameFragment"
+        android:label="fragment_family_game"
+        tools:layout="@layout/fragment_family_game" />
+    <fragment
+        android:id="@+id/fightGameFragment"
+        android:name="com.example.hw6.categoryfragments.FightGameFragment"
+        android:label="fragment_fight_game"
+        tools:layout="@layout/fragment_fight_game" />
+    <fragment
+        android:id="@+id/gameOneFragment"
+        android:name="com.example.hw6.gamefragments.GameOneFragment"
+        android:label="fragment_game_one"
+        tools:layout="@layout/fragment_game_one" />
+    <fragment
+        android:id="@+id/gameThreeFragment"
+        android:name="com.example.hw6.gamefragments.GameThreeFragment"
+        android:label="fragment_game_three"
+        tools:layout="@layout/fragment_game_three" />
+    <fragment
+        android:id="@+id/gameTwoFragment"
+        android:name="com.example.hw6.gamefragments.GameTwoFragment"
+        android:label="fragment_game_two"
+        tools:layout="@layout/fragment_game_two" />
+    <fragment
+        android:id="@+id/independentGameFragment"
+        android:name="com.example.hw6.categoryfragments.IndependentGameFragment"
+        android:label="fragment_independent_game"
+        tools:layout="@layout/fragment_independent_game" />
+    <fragment
+        android:id="@+id/platformGameFragment"
+        android:name="com.example.hw6.categoryfragments.PlatformGameFragment"
+        android:label="fragment_platform_game"
+        tools:layout="@layout/fragment_platform_game" />
+    <fragment
+        android:id="@+id/shooterGameFragment"
+        android:name="com.example.hw6.categoryfragments.ShooterGameFragment"
+        android:label="fragment_shooter_game"
+        tools:layout="@layout/fragment_shooter_game" >
+        <action
+            android:id="@+id/action_shooterGameFragment_to_gameThreeFragment"
+            app:destination="@id/gameThreeFragment"
+            app:popUpTo="@id/shooterGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportGameFragment"
+        android:name="com.example.hw6.categoryfragments.SportGameFragment"
+        android:label="fragment_sport_game"
+        tools:layout="@layout/fragment_sport_game" >
+        <action
+            android:id="@+id/action_sportGame_to_fifa"
+            app:destination="@id/gameTwoFragment"
+            app:popUpTo="@id/sportGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

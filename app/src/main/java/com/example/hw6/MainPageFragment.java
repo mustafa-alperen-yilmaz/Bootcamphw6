@@ -1,4 +1,4 @@
-package com.example.hw6.gamefragments;
+package com.example.hw6;
 
 import android.os.Bundle;
 
@@ -8,18 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.hw6.R;
-import com.example.hw6.databinding.FragmentGameOneBinding;
+import com.example.hw6.databinding.FragmentMainPageBinding;
 
-
-public class GameOneFragment extends Fragment {
-    private FragmentGameOneBinding binding;
-    //warband olucak oyun adventure fragmente ba[lanacak
+public class MainPageFragment extends Fragment {
+    private FragmentMainPageBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentGameOneBinding.inflate(inflater, container, false);
+        binding = FragmentMainPageBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 }

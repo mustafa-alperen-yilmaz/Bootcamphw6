@@ -14,6 +14,7 @@ import com.example.hw6.databinding.FragmentGameTwoBinding;
 
 public class GameTwoFragment extends Fragment {
     private FragmentGameTwoBinding binding;
+    //fifa
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

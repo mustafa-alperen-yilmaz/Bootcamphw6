@@ -13,6 +13,7 @@ import com.example.hw6.databinding.FragmentGameThreeBinding;
 
 public class GameThreeFragment extends Fragment {
     private FragmentGameThreeBinding binding;
+    //warzone
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
