@@ -5,6 +5,9 @@ plugins {
 android {
     namespace 'com.example.hw6'
     compileSdk 32
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "com.example.hw6"
