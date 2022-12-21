@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPageFragment" >
+    tools:context=".MainPageFragment"
+    android:background="@color/white_background_main_color">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/white_background_main_color"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,9 +45,23 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recView"
         android:layout_width="0dp"
-        android:layout_height="167dp"
+        android:layout_height="248dp"
+        android:background="@color/white_background_main_color"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView2"
+        android:layout_width="0dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/white_background_main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
